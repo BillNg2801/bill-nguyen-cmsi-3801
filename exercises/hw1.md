@@ -124,3 +124,37 @@ mov al, 97   ; load the number 97 into register AL
 
 Machine language is what the computer executes. Assembly language is a human-readable shorthand for those same instructions.
 
+## 9. Function Example (Even/Odd) in a Language Not Seen in Class (Lua)
+
+```lua
+function f(n)
+  if n % 2 == 0 then
+    return n / 2
+  else
+    return 3 * n + 1
+  end
+end
+```
+
+**Explanation**  
+This function:  
+- Checks whether `n` is even or odd.  
+- If even, it returns `n / 2`.  
+- If odd, it returns `3 * n + 1`.  
+
+**Summary**  
+The function produces different results based on the parity of `n`.  
+It resembles the transformation used in the *Collatz conjecture*.
+
+## 10. Verse: A Functional-Logic Programming Language
+
+- **Creator:** Philip Wadler and collaborators (with Meta/Facebook)  
+- **Year:** 2021  
+- **Purpose:** To provide a robust language for the metaverse, interactive storytelling, and multi-agent systems.  
+- **Functional-Logic Meaning:**  
+  - *Functional*: emphasizes pure functions, immutability, higher-order constructs.  
+  - *Logic*: enables nondeterminism, pattern matching, inference, and backtracking.  
+
+**Summary**  
+Verse combines functional and logic paradigms to support expressive, high-level programming for complex, interactive systems.
+
