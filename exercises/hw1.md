@@ -11,5 +11,6 @@ numbers = [1, 2, 3, 4, 5, 6]
 evens = list(filter(lambda x: x % 2 == 0, numbers))
 
 print(evens)  # Output: [2, 4, 6]
+```
 
 **2. Give a compact Julia expression for the array just like the array called numbers except that every value is cubed. Use broadcasting.**
