@@ -148,7 +148,7 @@ It resembles the transformation used in the *Collatz conjecture*.
 
 ## 10. Verse: A Functional-Logic Programming Language
 
-- **Creator:** Philip Wadler and collaborators (with Meta/Facebook)  
+- **Creator:** Verse was developed by Simon Peyton Jones (of Haskell fame) and colleagues at Epic Games
 - **Year:** 2021  
 - **Purpose:** To provide a robust language for the metaverse, interactive storytelling, and multi-agent systems.  
 - **Functional-Logic Meaning:**  
