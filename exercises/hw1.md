@@ -14,3 +14,7 @@ print(evens)  # Output: [2, 4, 6]
 ```
 
 **2. Give a compact Julia expression for the array just like the array called numbers except that every value is cubed. Use broadcasting.**
+
+```julia
+numbers .^ 3
+```
