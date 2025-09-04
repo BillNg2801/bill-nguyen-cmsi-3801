@@ -32,6 +32,7 @@ Pragmatics refers to the practical aspects of how programming languages are used
 - Suitability for particular domains  
 
 **Summary**  
+
 Pragmatics is about how well a language serves its users in practice, not just how it is formally defined.
 
 ## 4. Explain, in detail, this fragment of K: `{+/x[&x!2]^2}`
@@ -44,17 +45,20 @@ Pragmatics is about how well a language serves its users in practice, not just h
 - `+/` → sums the squared results.  
 
 **Meaning**  
+
 The function takes an array `x`, extracts the odd numbers, squares them, and returns their sum.
 
 ## 5. What does the term object-orientation mean today? What did it originally mean?
 
 **Originally (Simula, 1960s)**  
+
 Object-orientation was about modeling real-world entities using objects with state and behavior. It focused on:  
 - Classes  
 - Inheritance  
 - Simulation of systems  
 
 **Today**  
+
 The meaning has broadened. Object-orientation now emphasizes:  
 - Encapsulation  
 - Inheritance and polymorphism  
@@ -62,11 +66,13 @@ The meaning has broadened. Object-orientation now emphasizes:
 - Reuse and maintainability  
 
 **Summary**  
+
 Originally, OOP was primarily a way to model real-world systems. Today, it is a comprehensive approach to organizing code for flexibility, reuse, and long-term maintainability.
 
 ## 6. What characters comprise the following string: `ᐊᐃᓐᖓᐃ`?
 
 **Characters (Inuktitut syllabics):**  
+
 1. ᐊ — U+140A, CANADIAN SYLLABICS A  
 2. ᐃ — U+1403, CANADIAN SYLLABICS I  
 3. ᓐ — U+14D0, CANADIAN SYLLABICS N  
@@ -74,19 +80,23 @@ Originally, OOP was primarily a way to model real-world systems. Today, it is a 
 5. ᐃ — U+1403, CANADIAN SYLLABICS I  
 
 **Meaning**  
+
 The string spells *“Ainngai”*, which in Inuktitut commonly means *“okay,” “alright,” or “fine.”*
 
 ## 7. What is the difference between control flow and concurrency?
 
 **Control Flow**  
+
 The order in which instructions are executed within a single thread of a program.  
 Examples: sequencing, loops, conditionals, and function calls.
 
 **Concurrency**  
+
 The ability of a program to deal with multiple tasks at once, either by interleaving execution or running them in parallel.  
 Examples: threads, asynchronous programming, distributed processes.
 
 **Summary**  
+
 - Control flow = "what happens next" in one line of execution.  
 - Concurrency = "how to manage many things happening" at the same time.
 
@@ -111,5 +121,6 @@ Assembly (x86):
 mov al, 97   ; load the number 97 into register AL
 ```
 **Summary**
+
 Machine language is what the computer executes. Assembly language is a human-readable shorthand for those same instructions.
 
