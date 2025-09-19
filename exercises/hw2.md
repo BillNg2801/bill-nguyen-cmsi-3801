@@ -77,7 +77,7 @@ function arithmeticsequence(start, delta)
 end
 ```
 
-## 7. 
+## 7. What does this script print under (a) static scoping and (b) dynamic scoping?
 
 **(a) Static (Lexical) Scoping**
 
@@ -131,3 +131,10 @@ f() * h() - x
 = (1) * (3) - 1
 = 2
 ```
+
+## 8. Why does shallow binding not make much sense when combined with static scoping?
+
+Shallow binding makes no sense with static scoping because under static scope the variable references are fixed by the code’s lexical structure. Whether you bind at creation or at call time doesn’t matter — the same variables will always be used.
+It only matters under dynamic scoping, where the environment can change depending on who calls the function.
+
+
