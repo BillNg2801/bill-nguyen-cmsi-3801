@@ -158,9 +158,3 @@ It resembles the transformation used in the *Collatz conjecture*.
 **Summary**  
 Verse combines functional and logic paradigms to support expressive, high-level programming for complex, interactive systems.
 
-```
-0 == "0"      // true
-false == "0"  // true
-null == undefined // true
-NaN == NaN    // false
-```
