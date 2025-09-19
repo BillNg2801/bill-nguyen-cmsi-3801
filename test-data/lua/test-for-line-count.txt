@@ -1,9 +1,0 @@
-This is a meaningful line
-# This is a comment line
-Another meaningful line
-
-# Another comment
-Yet another meaningful line
-    # Indented comment
-Final meaningful line
-Another meaningful line
