@@ -39,3 +39,13 @@ They can only exactly represent integers up to about 9e15.
 ```
 d = {"x": 3, y: 5, "z": z}
 ```
+
+- "x": 3 → same
+- y: 5 → key from variable y
+- "z": z → explicit key "z" with value from variable z
+
+**Difference:**
+
+Python doesn’t have object-literal shorthand (z → z: z) or [computed] keys inside {} like JS. You just write them out explicitly.
+
+
