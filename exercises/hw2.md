@@ -31,3 +31,10 @@ They can only exactly represent integers up to about 9e15.
 
 3**35 is bigger than that, so it gets rounded to the nearest double. Accodring to JavaScript the answer is:
 50031545098999710
+
+## 4. What is the Python equivalent of JavaScript’s {x: 3, [y]: 5, z}?
+
+**In Python, the closest equivalent is:**
+''
+d = {"x": 3, y: 5, "z": z}
+''
