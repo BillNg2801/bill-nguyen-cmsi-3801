@@ -63,4 +63,16 @@ NaN == NaN    // false
 So calling it “equals” is misleading.
 The proper name is “loose equality”, while === is “strict equality” (no coercion).
 
+## 6. Write a Lua function called arithmeticsequence that accepts two arguments, start and delta, that returns a coroutine such that each time it is resumed it yields the next value in the arithmetic sequence starting with start and incrementing by delta.
 
+```
+function arithmeticsequence(start, delta)
+  return coroutine.create(function()
+    local value = start
+    while true do
+      coroutine.yield(value)
+      value = value + delta
+    end
+  end)
+end
+```
