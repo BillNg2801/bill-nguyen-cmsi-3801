@@ -1,6 +1,9 @@
 ## 1. Why is the null reference so hideous?
 
 
+
+
+
 Because any reference might secretly be null, every access must be checked or else the program can crash.
 This has caused decades of bugs, security holes, and confusion — which is why Tony Hoare later called it his “billion-dollar mistake.”
 
