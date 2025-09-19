@@ -35,6 +35,7 @@ They can only exactly represent integers up to about 9e15.
 ## 4. What is the Python equivalent of JavaScript’s {x: 3, [y]: 5, z}?
 
 **In Python, the closest equivalent is:**
-''
+
+```
 d = {"x": 3, y: 5, "z": z}
-''
+```
