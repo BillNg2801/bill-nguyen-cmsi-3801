@@ -48,4 +48,19 @@ d = {"x": 3, y: 5, "z": z}
 
 Python doesn’t have object-literal shorthand (z → z: z) or [computed] keys inside {} like JS. You just write them out explicitly.
 
+## 5. Why is it best to not call JavaScript’s == operator “equals” (even though people do it all the time)?
+
+Because == doesn’t mean true equality — it does loose equality with type coercion.
+That means JavaScript changes types behind the scenes before comparing, leading to odd results:
+
+```
+0 == "0"      // true
+false == "0"  // true
+null == undefined // true
+NaN == NaN    // false
+```
+
+So calling it “equals” is misleading.
+The proper name is “loose equality”, while === is “strict equality” (no coercion).
+
 
