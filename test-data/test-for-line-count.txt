@@ -1,8 +1,9 @@
-line 1
-line 2
-line 3
+This is a meaningful line
+# This is a comment line
+Another meaningful line
 
-   
-# comment
-line 7
-line 8
+# Another comment
+Yet another meaningful line
+    # Indented comment
+Final meaningful line
+Another meaningful line
