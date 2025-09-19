@@ -76,3 +76,58 @@ function arithmeticsequence(start, delta)
   end)
 end
 ```
+
+## 7. 
+
+**(a) Static (Lexical) Scoping**
+
+Global x = 1
+f() → returns x from the lexical environment (where f was defined).
+- f is defined in the global scope, so it always returns global x = 1.
+So:
+- f() = 1
+h():
+- Inside h, local x = 9.
+- Then it calls g().
+g():
+- Inside g, local x = 3.
+- Then it calls f().
+f() (under static scope):
+-Still looks up global x = 1 (ignores h’s or g’s locals).
+-So returns 1.
+So g() = 1 → h() = 1.
+
+Substitute:
+```
+f() * h() - x 
+= 1 * 1 - 1 
+= -1
+```
+
+**(b) Dynamic Scoping**
+
+Dynamic scoping resolves variables using the call stack, not the lexical definition.
+
+Global x = 1
+f() when called directly:
+- No local x in f.
+- Looks at caller = global scope → finds x = 1.
+- So f() = 1.
+h():
+- Creates local x = 9.
+- Calls g().
+g():
+- Creates local x = 3.
+- Calls f().
+f() (under dynamic scoping):
+- No local x inside f.
+- Looks at caller = g(), and there x = 3.
+- So f() returns 3 this time.
+So g() = 3 → h() = 3.
+
+Substitute:
+```
+f() * h() - x
+= (1) * (3) - 1
+= 2
+```
