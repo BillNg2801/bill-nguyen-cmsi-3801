@@ -84,8 +84,8 @@ That way, you can see which functions are pure just by looking at their types.
 
 ## 10. In TypeScript, which of | or & is closer to subclassing or inheritance from Python? Why?
 
-& (intersection) is closer to inheritance — it combines multiple types into one that includes everything from each.  
-| (union) means “either one or the other”, not both.
+& - (intersection) is closer to inheritance — it combines multiple types into one that includes everything from each.  
+| - (union) means “either one or the other”, not both.
 
 ```
 type A = { a: number }
