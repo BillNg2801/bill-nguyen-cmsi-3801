@@ -36,7 +36,7 @@ Nullability is explicit in the type system — you must declare types as optiona
 
 ## 4. List<Dog> to List<Animal> Assignment
 
-❌ **Not allowed.**  
+**Not allowed.**  
 This should not be permitted for **type safety** reasons.
 
 If it were allowed:
