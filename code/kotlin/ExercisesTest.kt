@@ -25,7 +25,7 @@ fun expectToThrow(c: () -> Any, exception: Class<out Exception>, message: String
 
 fun main() {
     suite("firstThenLowerCase");
-    expect(firstThenLowerCase(listOf(), { !it.isEmpty() }) == null)
+    expect(firstThenLowerCase(listOf<String>(), { !it.isEmpty() }) == null)
     expect(firstThenLowerCase(listOf("", "A", "B"), { !it.isEmpty() }) == "a")
     expect(firstThenLowerCase(listOf("", "A", "ABC"), { it.length > 3 }) == null)
     expect(firstThenLowerCase(listOf("ABC", "ABCD", "ABCDE"), { it.length > 3 }) == "abcd")
@@ -115,3 +115,4 @@ fun main() {
 
     println("\n$passed passed, $failed failed")
 }
+
