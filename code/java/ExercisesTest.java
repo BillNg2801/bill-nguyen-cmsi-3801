@@ -33,7 +33,7 @@ public class ExercisesTest {
 
         suite("firstThenLowerCase");
         expect(Exercises.firstThenLowerCase(
-                List.of(), s -> !s.isEmpty()).isEmpty());
+                List.<String>of(), s -> !s.isEmpty()).isEmpty());
         expect(Exercises.firstThenLowerCase(
                 List.of("", "A", "B"), s -> !s.isEmpty()).get().equals("a"));
         expect(Exercises.firstThenLowerCase(
@@ -144,5 +144,9 @@ public class ExercisesTest {
                 counts.get(true),
                 counts.get(false)
         ));
+    }
+
+    public static void main(String[] args) throws IOException {
+        new ExercisesTest().main();
     }
 }
